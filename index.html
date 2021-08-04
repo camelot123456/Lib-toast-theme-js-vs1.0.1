@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Toasts</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+	<div id="toast"></div>
+
+	<div>
+		<div onclick="showSuccessToast()" class="btn btn--success">Show success toast
+		</div>
+		<div onclick="showWarningToast()" class="btn btn--warn">Show warning toast
+		</div>
+		<div onclick="showErrorToast()" class="btn btn--danger">Show error toast</div>
+	</div>
+
+	<script type="text/javascript" src="./script.js"></script>
+	<script>
+
+		
+
+		function showSuccessToast(){
+			toast({
+				title: 'Success',
+				message: 'Bạn đã thêm mới thành công ^^',
+				type: 'success',
+				duration: 3000
+			})
+		}
+
+		function showWarningToast(){
+			toast({
+				title: 'Success',
+				message: 'Bộ nhớ gần đầy !',
+				type: 'warning',
+				duration: 3000
+			})
+		}
+
+		function showErrorToast(){
+			toast({
+				title: 'Success',
+				message: 'Thêm mới không thành công !!!',
+				type: 'error',
+				duration: 3000
+			})
+		}
+
+
+	</script>
+</body>
+</html>
